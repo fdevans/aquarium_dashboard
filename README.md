@@ -24,6 +24,9 @@ This is written very quickly.  Please feel free to comment on the thread or open
         1. `sudo apt install grafana=8.4.7`
 
 
+Included is an `install.sh` file that can be used to perform the steps above quickly and easily.  You'll likely need to make it executable after you copy it to the Pi.  `chmod +x ./install.sh`
+
+
 ## Configuration
 
 ### Get Data from the APEX
