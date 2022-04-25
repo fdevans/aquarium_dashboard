@@ -55,6 +55,19 @@ Start by Creating a new Dashboard and giving it a name and saving it.
 
 > Note: Because I am recreating my examples I’m using my preferences.  Feel free to adjust as needed for your own needs.
 
+
+#### Configuring the InfluxDB Datasource in Grafana
+
+1. Login to Grafana
+1. Navigate to _Configuration Menu_ > _DataSources_ (Gear Icon on left)
+1. Click _Add data source_
+1. Choose _InfluxDB_
+1. URL: `http://localhost:8086`
+1. Database: `apex`
+    (all other settings can be left default)
+1. Click **Save and Test** and make sure connection works.
+
+
 #### Temperature Gauge Panel
 
 1. Add a New Panel
