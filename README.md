@@ -6,9 +6,9 @@ This is written very quickly.  Please feel free to comment on the thread or open
 
 ## Base Installation
 
-1. Setup RPI - Follow Docs to get to base setup.
+1. Setup RPI - Follow Docs to get to base setup.  I used a 3B+ with the 32bit Raspberry Pi OS. ([raspberrypi.com instructions](https://www.raspberrypi.com/documentation/computers/getting-started.html))
     1. Wired or Wireless is fine, but make sure the IP address is “fixed” so you know where to find it all the time.
-    2. Make sure you run all the updates
+    2. Make sure you run all the updates.
 2. Install InfluxDB
     3. [https://pimylifeup.com/raspberry-pi-influxdb/](https://pimylifeup.com/raspberry-pi-influxdb/)
     4. Should be good after step 7 of the setup.
