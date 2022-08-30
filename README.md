@@ -32,20 +32,19 @@ Included is an `install.sh` file that can be used to perform the steps above qui
 ### Get Data from the APEX
 
 1. Navigate to `/etc/telegraf` on the RPi
-2. Copy _telegraf.conf_ to _telegraf.conf.default_ (to save it as a backup)
-3. Edit the _telegraf.conf_ and include the following to get things started.
+1. Copy _telegraf.conf_ to _telegraf.conf.default_ (to save it as a backup)
+1. Edit the _telegraf.conf_ and include the following to get things started.
     1. File contents in repo. (telegraf.conf)
-    2. Change IP Address of `192.111.5.5` to whatever your APEX is using. (Can be found in network setup of Apex.)
-4. Restart Telegraf
-    3. `sudo systemctl restart telegraf`
-5. Check Influx is gathering Data
-    4. Enter Influx Console: `influx`
-    5. Type: `show databases`
+    1. Change IP Address of `192.111.5.5` to whatever your APEX is using. (Can be found in network setup of Apex.)
+1. Restart Telegraf `sudo systemctl restart telegraf`
+1. Check Influx is gathering Data
+    1. Enter Influx Console: `influx`
+    1. Type: `show databases`
         1. If you don’t see “Apex” stop and troubleshoot
-    6. Type: `use apex`
-    7. Type: `show measurements`
-        2. Mine shows: `apex_dosing, apex_inputs, neptune_apex, trident_levels`
-    8. Type: `select * from neptune_apex`
+    1. Type: `use apex`
+    1. Type: `show measurements`
+        1. Mine shows: `apex_dosing, apex_inputs, neptune_apex, trident_levels`
+    1. Type: `select * from neptune_apex`
 
 
 ### Starting your Dashboard
